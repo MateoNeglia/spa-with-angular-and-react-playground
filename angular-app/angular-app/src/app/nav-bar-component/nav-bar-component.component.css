@@ -1,0 +1,22 @@
+.mat-drawer {
+    position: fixed !important;
+  }
+
+  .night-mode-toggler {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+  }
+
+  h2 {
+    color:  #fff;
+  }
+
+  .light-blue-bg {
+    background-color: var(--lighter-blue-color-variable);
+  }
+
+  .dark-navbar-bg {
+    background-color: var(--dark-black-color-variable);
+    
+  }

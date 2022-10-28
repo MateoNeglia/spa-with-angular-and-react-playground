@@ -1,0 +1,46 @@
+/*Color palette: https://coolors.co/ffffff-00171f-003459-007ea7-00a8e8*/
+
+.react-section {
+    background-color: #003459;
+    color: #ffffff;    
+}
+
+.users-btn {    
+    color: #003459;
+}
+
+.users-btn:hover {
+    background-color:#00171F;
+}
+
+.user-pill {
+    margin-bottom: .5em;
+}
+
+.header-default-mimic {
+    color: rgba(0,0,0,.54)!important;
+    font-size: 12px!important;
+}
+
+.angular-mat-mimic-row {
+    padding: 0.5em!important;
+    font-size: 14px!important;
+}
+
+.last-table-element {
+    padding-right: 24px!important;
+}
+.first-table-element {
+    padding-left: 24px!important;
+}
+
+.angular-mat-button-mimic {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px!important;
+    font-weight: 500!important;
+}
+
+.header-default-mimic-dark {
+    color: var(--white-color-variable);
+}
+

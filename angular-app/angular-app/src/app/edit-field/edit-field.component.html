@@ -1,0 +1,31 @@
+<h1 mat-dialog-title> Do you want to edit this User?</h1>
+<div mat-dialog-content>
+
+    <form >
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>User Id</mat-label>
+          <input matInput [(ngModel)]="this.data.user.id" value="{{this.data.user.id}}" name="id">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="this.data.user.name" value="{{this.data.user.name}}" name="name">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Lastname</mat-label>
+            <input matInput [(ngModel)]="this.data.user.lastName" value="{{this.data.user.lastName}}" name="lastName">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput [(ngModel)]="this.data.user.address" value="{{this.data.user.address}}" name="address">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="this.data.user.email" value="{{this.data.user.email}}" name="email">
+          </mat-form-field>                    
+      </form>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-flat-button (click)="onNoClick()" color="primary">No Thanks</button>
+  <button mat-flat-button [mat-dialog-close]="editUser()" cdkFocusInitial class="red-color-danger-bg dark-theme-title-color">EDIT USER</button>
+</div>

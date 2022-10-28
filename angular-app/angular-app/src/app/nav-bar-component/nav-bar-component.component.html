@@ -1,0 +1,24 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav p-2" mode="side">
+        <h2>Here is Angular Territory</h2>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Go Back to Main Page
+      </button>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content dark-blue-primary-bg d-flex flex-row" id="nav-bar">
+        <div class="example-flex-container p-2">
+            <div class="example-button-container">
+              <button mat-mini-fab class="light-blue-bg" (click)="drawer.toggle()">
+                <mat-icon>menu</mat-icon>
+              </button>              
+            </div>                    
+          </div>
+          <h2 class="mt-2">{{title}}</h2>  
+          
+          <mat-slide-toggle class="lighter-blue-primary-color night-mode-toggler" [checked]="checked" [(ngModel)]="checked" (ngModelChange)="toggleNightMode()">Night Mode</mat-slide-toggle>
+    </div>
+  
+  </mat-drawer-container>
+

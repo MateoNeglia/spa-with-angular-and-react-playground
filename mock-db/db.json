@@ -1,0 +1,100 @@
+{
+    "users": [
+      {
+        "id": 0,
+        "address": "465 New York",
+        "name": "Jackie",
+        "lastName": "Chan",
+        "email": "drunkenmaster@jchangod.com"
+        
+      },
+      {
+        "id": 1,
+        "address": "465 Detroit",
+        "name": "Ip",
+        "lastName": "Man",
+        "email": "itrainedbrucelee@unbeatable.com"
+        
+      },
+      {
+        "id": 2,
+        "address": "465 San Andreas",
+        "name": "Bruce",
+        "lastName": "Lee",
+        "email": "getmeayellowsuit@ultimate-warrior.com"
+        
+      },
+      {
+        "id": 3,
+        "address": "465 Vice City",
+        "name": "Jet",
+        "lastName": "Li",
+        "email": "wushuchampion@iamtheone.com"
+        
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "name": "Apples",
+        "price": 5.32,
+        "description": "This is a product description for Apples!"
+      },
+      {
+        "id": 2,
+        "name": "Pears",
+        "price": 1.12,
+        "description": "This is a product description for Pears!"
+      },
+      {
+        "id": 3,
+        "name": "Oranges",
+        "price": 2.99,
+        "description": "This is a product description for Oranges!"
+      },
+      {
+        "id": 4,
+        "name": "Bananas",
+        "price": 0.23,
+        "description": "This is a product description for Bananas!"
+      },
+      {
+        "id": 5,
+        "name": "Kiwi",
+        "price": 2.34,
+        "description": "This is a product description for Kiwi!"
+      },
+      {
+        "id": 6,
+        "name": "Mango",
+        "price": 10.23,
+        "description": "This is a product description for Mango!"
+      },
+      {
+        "id": 7,
+        "name": "Dragonfruit",
+        "price": 50.23,
+        "description": "This is a product description for Dragonfruit!"
+      },
+      {
+        "id": 8,
+        "name": "Durian",
+        "price": 120.32,
+        "description": "This is a product description for Durian!"
+      },
+      {
+        "id": 9,
+        "name": "Guacamole",
+        "price": 0.21,
+        "description": "This is a product description for Guacamole!"
+      },
+      {
+        "id": 9,
+        "name": "Strawberries",
+        "price": 2.45,
+        "description": "This is a product description for Strawberries!"
+      }
+
+    ],
+    "checkoutProducs": []
+  }

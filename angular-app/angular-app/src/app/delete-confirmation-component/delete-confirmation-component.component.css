@@ -1,0 +1,7 @@
+.red-color-danger-bg {
+    background-color: var(--red-color-variable);
+  }
+
+  .dark-theme-title-color {
+    color: var(--white-color-variable);
+  }

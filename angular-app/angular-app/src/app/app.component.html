@@ -1,0 +1,62 @@
+<app-nav-bar-component [title]='title'></app-nav-bar-component>
+
+<section class="light-blue-primary-bg" id="angular-main-section">  
+  <h2 class="dark-blue-primary-color" id="angular-section-title">User Management</h2>
+  <button class="btn dark-blue-primary-bg light-blue-primary-color mb-2 data-transfer-button"  (click)="sendDataToReact()">Send User Data to React <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react-logo" width="25px"></button>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" id="material-table">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef class="mat-cell-default"> Id </th>
+      <td mat-cell *matCellDef="let element" class="mat-cell-default"> {{element.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef class="mat-cell-default"> Name </th>
+      <td mat-cell *matCellDef="let element" class="mat-cell-default"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="lastname">
+      <th mat-header-cell *matHeaderCellDef class="mat-cell-default"> Lastname </th>
+      <td mat-cell *matCellDef="let element" class="mat-cell-default"> {{element.lastName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="address">
+      <th mat-header-cell *matHeaderCellDef class="mat-cell-default"> Address </th>
+      <td mat-cell *matCellDef="let element" class="mat-cell-default"> {{element.address}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef class="mat-cell-default"> Email </th>
+      <td mat-cell *matCellDef="let element" class="mat-cell-default"> {{element.email}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="delMod">
+      <th mat-header-cell *matHeaderCellDef class="mat-cell-default"> Delete / Modify </th>
+      <td mat-cell *matCellDef="let element"> 
+        <button mat-flat-button  class="me-2 red-color-danger-bg dark-theme-title-color" id={{element.id}} (click)="deleteUser(element)">Delete</button>  
+        <button mat-flat-button color="primary" class="light-blue-bg" (click)="editUser(element)">Edit</button>   
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <button mat-flat-button (click)="toggleProductsDisplay()" class="products-button mt-2 dark-blue-primary-bg light-blue-primary-color">Check our Products!</button>
+  
+</section>
+
+<section *ngIf="isDisplayingProducts" class="d-flex flex-wrap light-blue-primary-bg">
+  <mat-card *ngFor="let product of productArray" id="product-card" class="m-2 p-2">
+    <mat-card-title class="dark-blue-primary-color">{{product.name}}</mat-card-title>
+    <mat-card-content>
+      <p>{{product.description}}</p>
+      <p><span id="price-label">Price: </span> 
+        {{product.price}}</p>
+      </mat-card-content>
+    <button mat-flat-button color="primary" id={{product.id}} (click)="productCheckout(product)" class="m-1">Buy</button>
+    <button mat-flat-button color="accent" (click)="addProductToChart(product)" class="m-1">Add to chart</button>    
+  </mat-card>
+  <mat-card *ngIf="!productArray.length">
+    <mat-card-title>First you need to get the data from react!</mat-card-title>
+  </mat-card>
+</section>
+
