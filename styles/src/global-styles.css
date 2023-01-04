@@ -1,0 +1,77 @@
+/*Color palette: https://coolors.co/ffffff-00171f-003459-007ea7-00a8e8*/
+
+:root {
+
+    /*Default Color palette*/
+    --black-color-variable: #00171f!important;
+    --dark-blue-color-variable: #003459!important;
+    --light-blue-color-variable: #007ea7!important;
+    --lighter-blue-color-variable: #00a8e8!important;
+
+    /*Dark Mode Color palette*/
+    --dark-black-color-variable: #121212!important;
+    --dark-gray-color-variable: #212121!important;
+    --light-gray-color-variable: #303030!important;
+    --lighter-gray-color-variable: #424242!important;
+
+    /*access colors*/
+    --red-color-variable: #C70000!important;
+    --white-color-variable: #fafafa!important;
+
+}
+
+.black-primary-bg {
+    background-color: var(--black-color-variable);
+}
+
+.dark-blue-primary-bg {
+    background-color: var(--dark-blue-color-variable);
+}
+
+.light-blue-primary-bg {
+    background-color: var(--light-blue-color-variable);
+}
+
+.lighter-blue-primary-bg {
+    background-color: var(--lighter-blue-color-variable);
+}
+
+.black-primary-color {
+    color: var(--black-color-variable);
+}
+
+.dark-blue-primary-color {
+    color: var(--dark-blue-color-variable);
+}
+
+.light-blue-primary-color {
+    color: var(--light-blue-color-variable);
+}
+
+.lighter-blue-primary-color {
+    color: var(--lighter-blue-color-variable);
+}
+
+.white-color-dark-mode {
+    color: var(--white-color-variable);
+}
+
+.red-color-danger-bg {
+    background-color: var(--red-color-variable);
+}
+
+ul li {
+    list-style: none;
+}
+
+section {    
+    padding: 1em;    
+}
+
+.data-transfer-button {
+    font-size: 14px;
+    font-weight: 500;
+}
+.angular-app-test {
+    width: 25%!important;
+}
